@@ -9,12 +9,12 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     protected float health;
     protected UIManager uiManager;
 
-    // [SerializeField] protected Weapon weapon;
+     [SerializeField] protected Weapon weapon;
 
 
     protected virtual void Awake()
     {
-        //weapon = gameObject.AddComponent<Weapon>();
+        weapon = gameObject.GetComponent<Weapon>();
         uiManager = GameObject.FindObjectOfType<UIManager>();
         speed = 5f;
         health = 100f;

@@ -77,7 +77,6 @@ public class GameManager : Singleton<GameManager>
 
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
-        isPaused = true;
     }
 
 
@@ -85,7 +84,6 @@ public class GameManager : Singleton<GameManager>
     {
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
-        isPaused = false;
     }
     private void Update()
     {
@@ -93,11 +91,6 @@ public class GameManager : Singleton<GameManager>
         {
             Pause();
         }
-        /*
-        if (!isPaused)
-        {
-            Time.timeScale = 1f;
-        }*/
     }
 
 

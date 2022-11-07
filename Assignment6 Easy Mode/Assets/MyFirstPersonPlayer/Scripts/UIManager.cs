@@ -70,7 +70,7 @@ public class UIManager : GameManager
             }
         }
 
-        if (tutCoin == 1 || tutEnemies == 1)
+        if (tutCoin == 1 && tutEnemies == 3)
         {
             tutWon = true;
         }
